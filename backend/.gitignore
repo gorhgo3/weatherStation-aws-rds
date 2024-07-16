@@ -1,6 +1,0 @@
-backend/venv/
-*.pyc
-__pycache__/
-*.log
-*.sqlite3
-.env

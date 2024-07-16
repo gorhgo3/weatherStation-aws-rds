@@ -1,0 +1,21 @@
+# Ignore the virtual environment
+backend/venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+*.env
+*.local
+
+# SQLite database
+backend/db.sqlite3
+
+# Static and media files
+backend/staticfiles/
+backend/media/
+
+# Django migrations (ignore compiled migration
