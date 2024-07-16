@@ -1,15 +1,60 @@
-# Ignore the virtual environment
+# Node.js
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+logs/*.log
+
+# Dependency directories
+**/node_modules
+
+# Environment files
+.env
+.env.*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Frontend specific
+frontend/node_modules
+frontend/build
+frontend/.env
+frontend/.env.*.local
+
+# Python virtual environment
 backend/venv/
 
 # Python bytecode
-__pycache__/
-*.py[cod]
-*$py.class
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
 
-# Environment variables
-.env
-*.env
-*.local
+# Backend environment variables
+backend/.env
+backend/*.env
+backend/*.local
 
 # SQLite database
 backend/db.sqlite3
@@ -18,4 +63,9 @@ backend/db.sqlite3
 backend/staticfiles/
 backend/media/
 
-# Django migrations (ignore compiled migration
+# Django migrations
+backend/**/migrations/*.pyc
+backend/**/migrations/*.pyo
+backend/**/migrations/__pycache__/
+backend/**/migrations/*.py[cod]
+backend/**/migrations/*$py.class
