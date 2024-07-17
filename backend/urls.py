@@ -20,6 +20,7 @@ import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('getTime/', views.serveTimeObj),
+    path('getDevices/', views.serveDevices),
     # create a connection to BACnet equipment, measure the ip values then send to node client
     # add authnetication later on to manually update BACnet read values: artificial
     # periodically update the local database with readings of the BACnet device: weatherStation
