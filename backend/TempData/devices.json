@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Living Room Light",
+    "device_type": "Light",
+    "status": "On",
+    "last_updated": "2024-07-17T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Bedroom Thermostat",
+    "device_type": "Thermostat",
+    "status": "Off",
+    "last_updated": "2024-07-17T11:00:00Z"
+  }
+]

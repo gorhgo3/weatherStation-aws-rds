@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Living Room Temperature",
+    "sensor_type": "Temperature",
+    "value": 22.5,
+    "unit": "C",
+    "last_updated": "2024-07-17T10:05:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Basement Humidity",
+    "sensor_type": "Humidity",
+    "value": 45.3,
+    "unit": "%",
+    "last_updated": "2024-07-17T10:10:00Z"
+  }
+]

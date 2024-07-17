@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "user": "john_doe",
+    "preferred_temperature": 21.0,
+    "notification_enabled": true,
+    "night_mode": false
+  }
+]

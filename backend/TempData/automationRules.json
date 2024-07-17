@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Evening Lights On",
+    "condition": "time >= '18:00' and time < '23:00'",
+    "action": "turn on living room light",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "name": "Morning Thermostat Adjustment",
+    "condition": "time >= '06:00' and time < '08:00'",
+    "action": "set bedroom thermostat to 20",
+    "is_active": true
+  }
+]
