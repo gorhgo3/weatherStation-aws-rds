@@ -71,3 +71,7 @@ backend/**/migrations/*.pyo
 backend/**/migrations/__pycache__/
 backend/**/migrations/*.py[cod]
 backend/**/migrations/*$py.class
+
+
+
+weather/__pycache__
