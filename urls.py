@@ -14,13 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-import views
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('getTime/', views.serveTimeObj),
-    path('getDevices/', views.serveDevices),
+    path('', include('weather.urls')),
     # create a connection to BACnet equipment, measure the ip values then send to node client
     # add authnetication later on to manually update BACnet read values: artificial
     # periodically update the local database with readings of the BACnet device: weatherStation
