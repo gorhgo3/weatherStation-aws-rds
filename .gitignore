@@ -18,6 +18,8 @@ logs/*.log
 .env
 .env.*.local
 
+venv
+
 # TypeScript
 *.tsbuildinfo
 
