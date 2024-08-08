@@ -12,6 +12,9 @@ class WeatherRecordSerializer(serializers.ModelSerializer):
 class HumiditySerializer(serializers.ModelSerializer):
     class Meta:
         model = HumidityRecord
+        fields = ["humidity", "recorded_at"]
+
+
 class TemperatureSerializer(serializers.ModelField):
     class Meta: 
         # model = 
