@@ -16,7 +16,7 @@ class WeatherRecordDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = WeatherRecordSerializer
 
 
-class HumidityGeneric(generics.ListCreateAPIView):
+class HumidityGeneric(generics.ListAPIView):
     queryset = HumidityRecord.objects.all()
     serializer_class = HumiditySerializer
 
