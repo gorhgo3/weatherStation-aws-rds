@@ -2,7 +2,7 @@
 
 from rest_framework import generics
 from .models import WeatherRecord, HumidityRecord
-from .serializers import WeatherRecordSerializer, HumiditySerializer
+from .serializers import WeatherRecordSerializer, HumiditySerializer, TemperatureSerializer
 from rest_framework import generics, status
 from rest_framework.response import Response
 
@@ -10,6 +10,7 @@ from rest_framework.response import Response
 class WeatherRecordListCreate(generics.ListCreateAPIView):
     queryset = WeatherRecord.objects.all()
     serializer_class = WeatherRecordSerializer
+
 
 class WeatherRecordDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = WeatherRecord.objects.all()
@@ -39,14 +40,14 @@ class WeatherStationApi(generics.CreateAPIView):
           else:
               serializerErrors.append(serializer.errors)
 
-      """
       if 'temperature' in reqData:
           serializer = TemperatureSerializer(data={'temperature':reqData['temperature']})
           if serializer.is_valid():
               serializer.save()
           else:
               serializerErrors.append(serializer.errors)
-      
+
+      """
       if 'lux' in reqData:
           serializer = LuxSerializer(data={'lux':reqData['lux']})
           if serializer.is_valid():
