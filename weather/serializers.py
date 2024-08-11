@@ -31,3 +31,6 @@ class LuxSerializer(serializers.ModelField):
     class Meta: 
         # model = 
         fields = "__all__"
+
+
+#test commit
