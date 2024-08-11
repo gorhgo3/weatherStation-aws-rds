@@ -15,3 +15,11 @@ class HumidityRecord(models.Model):
 
     def __str__(self):
         return f"{self.recorded_at}, Humidity: {self.humidity}"
+    
+
+class TemperatureModel(models.Model):
+    recorded_at = models.DateTimeField(auto_now_add=True)
+    temperature = models.DecimalField(max_digits=5, decimal_places=2)
+
+    def __str__(self):
+        return f"{self.recorded_at}, Temperature: {self.temperature}"
