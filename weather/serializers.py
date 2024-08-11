@@ -1,7 +1,7 @@
 # weather/serializers.py
 
 from rest_framework import serializers
-from .models import WeatherRecord, HumidityRecord
+from .models import WeatherRecord, HumidityRecord, TemperatureModel
 
 class WeatherRecordSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,10 +15,11 @@ class HumiditySerializer(serializers.ModelSerializer):
         fields = ["humidity", "recorded_at"]
 
 
-class TemperatureSerializer(serializers.ModelField):
+class TemperatureSerializer(serializers.ModelSerializer):
     class Meta: 
-        # model = 
-        fields = "__all__"
+        model = TemperatureModel
+        fields = ["temperature", "recorded_at"]
+
 
 class WindSpeedSerializer(serializers.ModelField):
     class Meta: 
