@@ -9,6 +9,7 @@ class WeatherRecord(models.Model):
     def __str__(self):
         return f"{self.recorded_at} - Temp: {self.temperature}°C, Humidity: {self.humidity}%"
 
+
 class HumidityRecord(models.Model):
     recorded_at = models.DateTimeField(auto_now_add=True)
     humidity = models.DecimalField(max_digits=5, decimal_places=2)
